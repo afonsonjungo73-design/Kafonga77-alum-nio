@@ -1,0 +1,107 @@
+# Kafonga77-alum-nio
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumínio Premium</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        Alumínio Premium
+    </div>
+
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#carrinho">Carrinho</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Os Melhores Produtos de Alumínio</h1>
+    <p>Pratos, canecas, formas de bolo, panelas e muito mais.</p>
+</section>
+
+<section id="produtos" class="produtos">
+
+    <h2>Nossos Produtos</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?w=600" alt="">
+            <h3>Prato de Alumínio</h3>
+            <p>2500 Kz</p>
+            <button onclick="adicionar('Prato de Alumínio',2500)">
+                Adicionar
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1577937927133-66ef06acdf18?w=600" alt="">
+            <h3>Caneca de Alumínio</h3>
+            <p>3000 Kz</p>
+            <button onclick="adicionar('Caneca de Alumínio',3000)">
+                Adicionar
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600" alt="">
+            <h3>Forma para Bolo</h3>
+            <p>7500 Kz</p>
+            <button onclick="adicionar('Forma para Bolo',7500)">
+                Adicionar
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1584990347449-a1f4e78d50a4?w=600" alt="">
+            <h3>Panela de Alumínio</h3>
+            <p>15000 Kz</p>
+            <button onclick="adicionar('Panela de Alumínio',15000)">
+                Adicionar
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section id="carrinho" class="carrinho">
+
+    <h2>Carrinho</h2>
+
+    <ul id="listaCarrinho"></ul>
+
+    <h3>Total: <span id="total">0</span> Kz</h3>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+
+    <input type="text" id="telefone" placeholder="Telefone">
+
+    <input type="text" id="endereco" placeholder="Endereço de entrega">
+
+    <button class="whatsapp" onclick="finalizarPedido()">
+        Finalizar pelo WhatsApp
+    </button>
+
+</section>
+
+<footer id="contato">
+    <h3>Alumínio Premium</h3>
+    <p>WhatsApp: +244 947 883 204</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
